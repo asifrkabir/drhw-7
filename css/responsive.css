@@ -1,0 +1,112 @@
+    /* Selection colours (easy to forget) */
+    
+    ::selection 	 	{background: rgb(255,255,158);}
+    ::-moz-selection 	{background: rgb(255,255,158);}
+    img::selection 		{background: transparent;}
+    img::-moz-selection	{background: transparent;}
+    body {-webkit-tap-highlight-color: rgb(255,255,158);}
+    
+    
+    
+    /*		Default Layout: 992px. 
+            Gutters: 24px.
+            Outer margins: 48px.
+            Leftover space for scrollbars @1024px: 32px.
+    -------------------------------------------------------------------------------
+    cols    1     2      3      4      5      6      7      8      9      10
+    px      68    160    252    344    436    528    620    712    804    896    */   
+    
+    
+    /*		Tablet Layout: 768px.
+            Gutters: 24px.
+            Outer margins: 28px.
+            Inherits styles from: Default Layout.
+    -----------------------------------------------------------------
+    cols    1     2      3      4      5      6      7      8
+    px      68    160    252    344    436    528    620    712    */
+    
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        
+        .container{
+            width: 80%;
+        }
+        #menuicon{
+            display: block;
+            width: 40px;
+            height: 40px;
+            margin: 10px;
+            font-size: 30px;
+            color: #fff;
+            cursor: pointer;
+        }
+        #menuicon::before{
+            content: "\f0c9";
+            font-family: "Font Awesome 5 Free";
+            line-height: 40px;
+            font-weight: bold;
+        }
+        #menuicon.active::before{
+            content: "\f00d";
+        }
+        nav{
+            display: none;
+        }
+
+        nav.active{
+            display: block;
+            flex-basis: 100%;
+            padding-top: 20px;
+        }
+
+        #menutoggle.active ul{
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        
+    }
+    
+    
+    
+    /*		Mobile Layout: 320px.
+            Gutters: 24px.
+            Outer margins: 34px.
+            Inherits styles from: Default Layout.
+    ---------------------------------------------
+    cols    1     2      3
+    px      68    160    252    */
+    
+    @media only screen and (max-width: 767px) {
+        
+        
+        
+    }
+    
+    
+    
+    /*		Wide Mobile Layout: 480px.
+            Gutters: 24px.
+            Outer margins: 22px.
+            Inherits styles from: Default Layout, Mobile Layout.
+    ------------------------------------------------------------
+    cols    1     2      3      4      5
+    px      68    160    252    344    436    */
+    
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        
+        
+    
+    }
+    
+    
+    /*	Retina media query.
+        Overrides styles for devices with a 
+        device-pixel-ratio of 2+, such as iPhone 4.
+    -----------------------------------------------    */
+    
+    @media 
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min-device-pixel-ratio: 2) {
+        
+        
+        
+    }

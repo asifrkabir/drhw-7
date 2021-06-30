@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,600;1,700;1,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography Start */
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.container_full {
+    width: 100%;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.learnmore {
+    padding: 10px 30px;
+    background-color: #fb2056;
+    color: #fff;
+    border-radius: 30px;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Typography End */
+
+/* Banner Section Start */
+
+.header_bg {
+    background-image: url(../images/img1.jpg);
+    color: #fff;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-size: cover;
+    height: 90vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+header .logo h2 {
+    letter-spacing: 1px;
+}
+
+header .logo p {
+    letter-spacing: 3px;
+}
+
+#menutoggle ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#menutoggle ul li a {
+    padding: 8px 16px;
+    margin-right: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    display: block;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#menutoggle ul li a:hover, #menutoggle ul li:last-child a {
+    border-color: #fff;
+}
+
+#row {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#row h3 {
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+#row h1 {
+    font-size: 5vw;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+#row span {
+    width: 30%;
+    height: 4px;
+    margin: 10px 0;
+    background-color: #fb2056;
+}
+
+/* Banner Section End */
+
+/* Quote Section Start */
+
+.quotation {
+    background: #e9fdef;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.quotation .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-sign {
+    padding-right: 40px;
+}
+
+.quote-sign i {
+    font-size: 80px;
+    color: #bee0c8;
+    transform: rotate(180deg);
+}
+
+.quote p {
+    color: #929292;
+    padding-bottom: 20px;
+}
+
+.quote h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #696969;
+}
+
+/* Quote Section End */
+
+/* Events Section Start */
+
+.events {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.events span {
+    width: 8%;
+    height: 4px;
+    margin: 10px 0;
+    background-color: #fb2056;
+    margin-bottom: 100px;
+}
+
+.events-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.half-width {
+    width: 450px;
+    margin: 0 60px;
+}
+
+.half-width h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.half-width p {
+    margin: 20px 0 60px 0;
+}
+
+.half-width a {
+    color: #fb2056;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    transition: all 0.4s ease-in-out;
+}
+
+.half-width a:hover{
+    padding-left: 20px;
+}
+
+/* Events Section Ends */
+
+/* Explore Section Starts */
+
+.explore_bg {
+    background-image: url(../images/img3.jpg);
+    color: #fff;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-size: cover;
+    height: 40vh;
+}
+
+.explore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore_width {
+    width: 50%;
+}
+
+.explore_width h1 {
+    font-size: 4vw;
+    margin: 10px 0;
+}
+
+.explore_width span {
+    width: 15%;
+    height: 4px;
+    margin: 10px 0;
+    background-color: #fb2056;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.explore_width p {
+    margin-bottom: 20px;
+}
+
+.explore_width a {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    transition: all 0.4s ease-in-out;
+}
+
+.explore_width a:hover{
+    padding-left: 20px;
+}
+
+/* Explore Section Ends */
+
+/* Tour Section Starts */
+
+.tours {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.third-width span {
+    width: 18%;
+    height: 4px;
+    margin: 10px 0;
+    background-color: #fb2056;
+    display: block;
+    margin-bottom: 60px;
+}
+
+.third-width {
+    width: 30%;
+}
+
+.third-width p {
+    margin-bottom: 40px;
+}
+
+.third-width a {
+    color: #fff;
+    padding: 15px;
+    border-radius: 40px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    background-color: #fb2056;
+}
+
+.third-width img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    padding: 0px 3px;
+    border-radius: 10px;
+}
+
+.third-width a{
+    transition: all 0.4s ease-in-out;
+}
+
+.third-width a:hover{
+    padding-left: 20px;
+}
+
+/* Tour Section Ends */
+
+/* Footer Starts */
+
+footer{
+    background: #191919;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    height: 150px;
+}
+
+footer p{
+    padding: 10px 0;
+}
+
+/* Footer Ends */
